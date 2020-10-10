@@ -68,6 +68,20 @@ def toString(count, nmm=_no_value):
     return final
 
 
-print(toString('a',3))
+print(toString('a', 'a'))
 
-dir()
+
+# 不定长参数
+
+
+def print_user_info(age, na, se, *hobby):
+    print("昵称：{}".format(na), end=' ')
+    print('性别：{}'.format(se), end=' ')
+    print('爱好：{}'.format(hobby))
+    return
+
+
+print_user_info(17, 'lee', 'man', '打球', '游戏')
+
+
+
