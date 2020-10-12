@@ -85,3 +85,7 @@ print_user_info(17, 'lee', '打球', '游戏', se='man')
 
 Str = "一'二'三"
 str1 = '''一 "二" '''
+
+addAll = lambda n1, n2: n1 + n2
+
+print(addAll(1, 2))
