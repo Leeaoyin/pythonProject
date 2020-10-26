@@ -74,14 +74,14 @@ print(toString('a', 'a'))
 # 不定长参数
 
 
-def print_user_info(age, na, *hobby, **se):
-    print("昵称：{}".format(na), end=' ')
-    print('性别：{}'.format(se), end=' ')
-    print('爱好：{}'.format(hobby))
+def print_user_info(na, *hobby, **se):
+    print("姓名：{}".format(na), end=' ')
+    print('属性：{}'.format(se), end=' ')
+    print('类别：{}'.format(hobby))
     return
 
 
-print_user_info(17, 'lee', '打球', '游戏', se='man')
+print_user_info('新华', '花子', '大佬', 'huazi')
 
 Str = "一'二'三"
 str1 = '''一 "二" '''
