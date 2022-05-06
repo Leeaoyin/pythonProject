@@ -73,6 +73,17 @@ def set_in():
     print(set_one & set_two)
 
 
+def dict_in():
+    scoces = {'lee': 21, 'june': 32, 'tom': 45, 'alice': 67}
+    print(scoces)
+    # 创建字典的构造器语法
+    item_one = dict(one=1, tow=2, three=3)
+    print(item_one)
+    # 使用zip将两个序列压缩成字典
+    tuple = ('lee', 12, True)
+    tu = ('lee', 12, True)
+    item_tow = dict(zip(tu, tuple))
+    print(item_tow)
 
 
 def main():
@@ -81,7 +92,9 @@ def main():
     # student.study('python')
     # list_operation()
     # tuple_in()
-    set_in()
+    # set_in()
+    dict_in()
+
 
 if __name__ == '__main__':
     main()
