@@ -6,8 +6,10 @@
 #@Description : TODO
 """
 
+
 class Student:
     """the beginning of clazz"""
+
     def __init__(self, name, age):
         """construct mothed"""
         self.name = name
@@ -40,16 +42,24 @@ def list_operation():
     print(list_i)
     list_i.reverse()
     print(list_i)
-    list_i.pop(len(list_i)-1)
+    list_i.pop(len(list_i) - 1)
     print(list_i)
 
 
 def tuple_in():
     t = ('lee', 21, True, '湖北')
+    """遍历元组"""
     for elem in t:
         print(elem)
-
+    """将元组转换成list"""
     person = list(t)
+    print(person)
+    """将list转换成tuple"""
+    person_list = ['lee', 'xue', 'liu', 'wang']
+    person_tuple = tuple(person_list)
+    print(type(person_tuple))
+
+
 
 
 def main():
