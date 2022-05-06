@@ -46,7 +46,10 @@ def list_operation():
 
 def tuple_in():
     t = ('lee', 21, True, '湖北')
-    print(type(t))
+    for elem in t:
+        print(elem)
+
+    person = list(t)
 
 
 def main():
