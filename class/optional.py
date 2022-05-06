@@ -62,7 +62,7 @@ def tuple_in():
 
 def set_in():
     set_one = {1, 2, 3, 4, 5, 6, 7}
-    set_two = set(range(1,10))
+    set_two = set(range(1, 10))
     set_three = set(('a', 'c', 'd', 'e'))
     print(set_one, set_two)
     print(set_one)
