@@ -60,6 +60,19 @@ def tuple_in():
     print(type(person_tuple))
 
 
+def set_in():
+    set_one = {1, 2, 3, 4, 5, 6, 7}
+    set_two = set(range(1,10))
+    set_three = set(('a', 'c', 'd', 'e'))
+    print(set_one, set_two)
+    print(set_one)
+    set_one.update([11, 12])
+    print(set_one)
+    print(set_three.pop())
+    print(set_three)
+    print(set_one & set_two)
+
+
 
 
 def main():
@@ -67,8 +80,8 @@ def main():
     # student = Student('Liming', 18)
     # student.study('python')
     # list_operation()
-    tuple_in()
-
+    # tuple_in()
+    set_in()
 
 if __name__ == '__main__':
     main()
