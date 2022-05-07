@@ -11,6 +11,7 @@ class SpiderManItem(scrapy.Item):
     # name = scrapy.Field()
     pass
 
+
 class DoubanItem(scrapy.Item):
     title = scrapy.Field()
     score = scrapy.Field()
