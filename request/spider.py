@@ -34,7 +34,7 @@ def doSpider():
 
 def insert_into_table(name,sql):
     import pymysql
-    conn = pymysql.connect(host='database.jkshay.cn', port=3306, user='root', password='jksh', database='cdc', charset='utf8mb4')
+    conn = pymysql.connect(host='your_host', port=3306, user='root', password='your password', database='db', charset='utf8mb4')
     try:
         with conn.cursor() as cursor:
             affected_rows = cursor.execute(sql)
