@@ -17,12 +17,12 @@ def do_request():
         'Accept-Language': 'zh-CN,zh;q=0.9',
     }
 
-    response = requests.get(url='https://api2.dayi.org.cn/api/disease/list2?pageNo=1&pageSize=10',
+    response = requests.get(url='https://api2.dayi.org.cn/api/cmedical/list2?pageNo=1&pageSize=10',
                              headers=headers)
     code = response.status_code
     print(code)
     result = response.json()['list']
-    print(type(result[0]))
+    print(result[0])
 
 
 def main():
