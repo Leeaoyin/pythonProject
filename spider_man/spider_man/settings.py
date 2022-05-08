@@ -18,6 +18,18 @@ NEWSPIDER_MODULE = 'spider_man.spiders'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
+RANDOMIZE_DOWNLOAD_DELAY = True
+# 并发请求数量
+CONCURRENT_REQUESTS = 4
+
+# 下载延迟
+DOWNLOAD_DELAY = 3
+# 随机化下载延迟
+RANDOMIZE_DOWNLOAD_DELAY = True
+# 配置数据管道
+ITEM_PIPELINES = {
+   'spider_man.pipelines.SpiderManPipeline': 300,
+}
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -37,10 +49,12 @@ ROBOTSTXT_OBEY = True
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-#DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
-#}
+DEFAULT_REQUEST_HEADERS = {
+  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'Accept-Language': 'en',
+}
+
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html

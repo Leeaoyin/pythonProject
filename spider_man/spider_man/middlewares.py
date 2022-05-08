@@ -87,6 +87,7 @@ class SpiderManDownloaderMiddleware:
         # - return a Response object
         # - return a Request object
         # - or raise IgnoreRequest
+        request.meta
         return response
 
     def process_exception(self, request, exception, spider):
