@@ -5,6 +5,8 @@
 #@Time : 2022/5/8 20:45
 #@Description : TODO
 """
+import time
+
 import requests
 
 
@@ -22,7 +24,11 @@ def do_request():
     code = response.status_code
     print(code)
     result = response.json()['list']
-    print(result[0])
+    for i in range(10):
+        title = result[i]['title']
+        pic_url = result[i]['thumbnail']
+        introduction = result[i]['introduction']
+
 
 
 def main():
